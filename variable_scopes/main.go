@@ -18,4 +18,13 @@ func main() {
 
 	//globla scope
 	fmt.Println(x)
+	test()
+	fmt.Println(x)
+}
+
+func test() {
+	//function scope
+	//if have function scope variable with same name as global variable compiler uses function scope variable
+	var x = 20
+	fmt.Println(x)
 }
